@@ -1,1 +1,103 @@
-<p>inicio works!</p>
+<div class="container-fluid">
+
+    <div class="row bg-secondary d-flex align-items-center">
+        <div class="col-md-6">
+        
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 text-white">
+                    <h1 class="fs-54">Seja bem vindo(a)!</h1>
+                    <h5 class="fs-18">expresse aqui os seus pensamentos e opniões!</h5>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-3 mb-5">
+                <div class="col-md-6 ">
+                    <button class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#novaPostagem">Nova Postagem</button>
+                   <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a> 
+                </div>
+
+            </div>
+        </div>
+
+        
+
+        <div class="col-md-6 d-flex justify-content-center">
+
+            <img src="https://imgur.com/bQRrGCu.png " alt="aa" width="500px" height="500px">
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container mb-5 mt-5  " id="postagens">
+  
+    <ul class="nav nav-tabs r d-flex justify-content-center " id="myTab" role="tablist">
+        
+        <li class="nav-item " role="presentation">
+          <button class="nav-link active " id="todasPostagens-tab" data-bs-toggle="tab" data-bs-target="#todasPostagens" type="button" role="tab" aria-controls="todasPostagens" aria-selected="true">Todas as Postagens</button>
+        </li>
+        <li class="nav-item " role="presentation">
+          <button class="nav-link" id="minhasPostagens-tab" data-bs-toggle="tab" data-bs-target="#minhasPostagens" type="button" role="tab" aria-controls="minhasPostagens" aria-selected="false">Minhas Postagens</button>
+        </li>
+        <li class="nav-item " role="presentation">
+          <button class="nav-link" id="postagensTema-tab" data-bs-toggle="tab" data-bs-target="#postagensTema" type="button" role="tab" aria-controls="postagensTema" aria-selected="false">Postagens por Tema</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="todasPostagens-tab">Todas as Postagens</div>
+        <div class="tab-pane fade " id="minhasPostagens" role="tabpanel" aria-labelledby="minhasPostagens-tab">Minhas Postagens</div>
+        <div class="tab-pane fade " id="postagensTema" role="tabpanel" aria-labelledby="postagensTema-tab">Postagens por Tema</div>
+      </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="novaPostagem" tabindex="-1" aria-labelledby="novaPostagem" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--Titulo-->
+        <h5 class="modal-title" id="exampleModalLabel">Nova Postagem</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="form-group mb-4 mt-2">
+          <label for="titulo" class="mb-2 mt-2">Title </label>
+          <input type="text" class="form-control" id="titulo" placeholder="The Title plese...">
+        </div>
+
+        <div class="form-group mb-4 mt-2">
+          <label for="text" class="mb-2 mt-2">Description Of The IDEA </label>
+          <textarea class="form-control" name="text" id="text"  rows="4" placeholder="Please describe your ideas in deateas, and which way u may accomplish it."></textarea>
+        </div>
+          
+        <div class="form-group mb-4 mt-2">
+          <label for="tema" class="mb-2 mt-2">Which label this ideia may fits in? </label>
+          <select name="tema" id="tema" class="form-control">
+            <option value="">Labels</option>
+          </select>
+          <div class=" mt-5">
+            <label for="tema"> none of those? well u can <a href="">Create</a> a label if u wish. </label>
+          </div>
+          
+        </div>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Push</button>
+      </div>
+    </div>
+  </div>
+</div>
