@@ -1,0 +1,24 @@
+<div class="contariner mt-5 mb-5">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center text-secondary">Update the label</h1>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center ">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label for="descricao">Descrition</label>
+                <input type="text" class="form-control" id="descricao" [(ngModel)]='tema.descricao'>
+            </div>
+            <div class="d-flex justify-content-end mt-3 mb-3">
+                <button class="btn btn-danger me-4" routerLink='/tema'>Canel</button>
+                <button class="btn btn-success" (click)='atualizar()'>UpDate</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
